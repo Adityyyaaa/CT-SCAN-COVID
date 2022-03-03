@@ -16,7 +16,7 @@ For some sample images, visit the 'Sample Images' Folder <br>
 
 <hr>
 
-<h3> Model Architecture </h3>
+<h4> Model Architecture </h4>
 The Model consists of 3 ConvBlocks. Each ConvBlock has a 2D convolutional layer, a dropout and a max-pooling layer. The number of kernels vary over the 3 ConvBlocks in such a way that the image dimensions shrink over the 3 blocks, and the number of channels increase. <br><br>
 Then the obtained output of these layers is flattened and fed to two fully connected layers, followed by a sigmoid classifier. The activation function for all the convolutional layers and the fully connected layers is 'relu'. Only the last layer uses a 'sigmoid' activation function. The dense layers also have 2 dropouts before each of them. <br><br>
 
